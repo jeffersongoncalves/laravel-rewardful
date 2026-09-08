@@ -1,6 +1,6 @@
 <div class="filament-hidden">
 
-<!-- banner: art/jeffersongoncalves-laravel-rewardful.png (generate via portfolio-banner skill) -->
+![Laravel Rewardful](https://raw.githubusercontent.com/jeffersongoncalves/laravel-rewardful/main/art/jeffersongoncalves-laravel-rewardful.png)
 
 </div>
 
