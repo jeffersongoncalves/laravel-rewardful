@@ -1,16 +1,17 @@
 <?php
 
-namespace Jeffersongoncalves\Rewardful\Facades;
+namespace JeffersonGoncalves\Rewardful\Facades;
 
 use Illuminate\Support\Facades\Facade;
+use JeffersonGoncalves\Rewardful\Rewardful as RewardfulClient;
 
 /**
- * @see \Jeffersongoncalves\Rewardful\Rewardful
+ * @see RewardfulClient
  */
 class Rewardful extends Facade
 {
     protected static function getFacadeAccessor(): string
     {
-        return 'laravel-rewardful';
+        return RewardfulClient::class;
     }
 }

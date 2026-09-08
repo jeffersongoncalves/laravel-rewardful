@@ -1,6 +1,6 @@
 <?php
 
-namespace Jeffersongoncalves\Rewardful;
+namespace JeffersonGoncalves\Rewardful;
 
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
@@ -10,9 +10,12 @@ class RewardfulServiceProvider extends PackageServiceProvider
     public function configurePackage(Package $package): void
     {
         $package
-            ->name('laravel-rewardful')
-            ->hasConfigFile()
-            ->hasViews()
-            ->hasMigrations();
+            ->name('rewardful')
+            ->hasConfigFile();
+    }
+
+    public function packageRegistered(): void
+    {
+        $this->app->singleton(Rewardful::class);
     }
 }
